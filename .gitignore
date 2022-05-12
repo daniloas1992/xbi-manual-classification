@@ -1,0 +1,6 @@
+*.swp
+node_modules/*
+public/main.js
+public/log-alexa/*
+public/log-undergrad/*
+.idea/

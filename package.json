@@ -1,0 +1,38 @@
+{
+  "name": "xbi-manual-classifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "frontend-dev": "webpack --mode=development",
+    "frontend-prod": "webpack",
+    "start": "nodemon server.js"
+  },
+  "exports": {
+    "./": "./public"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "./public/log-alexa/*",
+      "./public/log-undergrad/*"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@watinha/arff": "^0.1.2",
+    "axios": "^0.21.1",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "supertest": "^6.1.4",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "jest": {
+    "transform": {}
+  }
+}
